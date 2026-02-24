@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+*{
+    user-select: none;
+}
+
+@theme {
+    --color-primary: #F05627;
+    --color-secondary: #FFA266;
+    --color-tertiary: #FFEFA1;
+    --border-gradient: linear-gradient(
+    to bottom,
+    var(--day-primary) 8%,
+    #F77C47 79%,
+    var(--day-secondary) 100%
+    );
+}
+
+.dark {
+  --color-primary: #AF6CE3;
+  --color-secondary: #EBA3E7;
+  --color-tertiary: #FFD0FC;
+  --border-gradient: linear-gradient(
+    to bottom,
+    var(--night-primary) 8%,
+    #C38EF0 79%,
+    var(--night-secondary) 100%
+  );
+}
